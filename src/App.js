@@ -5,25 +5,51 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <div id="content" className="container-fluid">
-        <div className="row">
-          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-              <h1 class="h2">水田センサー</h1>
-            </div>
-          </main>
-        </div>
+      
+      {/* <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">水田センサー</a>
+      </nav> */}
 
-        <h1>水田センサー</h1>
-        <div className="row">
-          <div className="col-sm">
-            <h2>水位</h2>
-          </div>
-          <div className="col-sm">
-            <h2>水温</h2>
+      <main role="main" className="px-md-4">
+        <div className="container-fluid">
+          <div className="">
+            <div className="row py-2">
+              <div className="col-12">
+                <h1 className="h2 alert alert-primary">2020/08/20 10:00 現在</h1>
+              </div>
+              <div className="col-sm box mr-2">
+                <h1 className="h2">水位</h1>
+                <div className="row justify-content-center">
+                  <div className="col-4 text-right h1">
+                    30
+                  </div>
+                  <div className="col-4">
+                    cm
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm box ml-2">
+                <h1 className="h2">水温</h1>
+                <div className="row justify-content-center">
+                  <div className="col-4 text-right h1">
+                    35
+                  </div>
+                  <div className="col-4">
+                    ℃
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        <div className="box mt-2">
+          <div className="row">
+            <div className="col">
+              <h1 className="h2 alert alert-primary">月間推移</h1>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
