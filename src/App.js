@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ChangeOfMonth from './ChangeOfMonth';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       </header>
 
       <main role="main" className="px-md-4 bg-light">
-        <div className="senser-values mb-2">
+        <div id="senser-values" className="pb-2 h-50">
           <div className="row align-items-center h-100">
             <div className="col-sm box mr-2">
               <h2 className="h2 border-bottom">水位</h2>
@@ -43,8 +44,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="change-of-month">
+        <div id="change-of-month" className="h-50">
           <h2 className="h2 border-bottom">月間推移</h2>
+          <ChangeOfMonth />
         </div>
       </main>
     </div>

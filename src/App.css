@@ -27,6 +27,6 @@ main {
     padding-top: 50px;
 }
 
-.senser-values {
-    height: 50%;
+#change-of-month h2 {
+    margin-bottom: 4px;
 }
