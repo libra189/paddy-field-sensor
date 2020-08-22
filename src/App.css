@@ -1,11 +1,32 @@
+.site-header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99;
+}
+
+.site-header div {
+    font-size: 16px;
+}
+
+.gnav__menu {
+    display: flex;
+}
+
+.gnav__menu__item {
+    margin-left: 20px;
+}
+
 html, body, #root, .App {
     height: 100%;
 }
 
 main {
-    min-height: 100%;
+    height: 100%;
+    padding-top: 50px;
 }
 
-.box {
-    border: solid 1px black;    
+.senser-values {
+    height: 50%;
 }

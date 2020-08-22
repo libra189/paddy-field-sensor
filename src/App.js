@@ -5,49 +5,46 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      
-      {/* <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">水田センサー</a>
-      </nav> */}
+      <header className="site-header p-2 navbar-dark bg-dark">
+        <div className="navbar-brand">水田センサー</div>
+        <nav className="gnav navbar-brand">
+          {/* <ul className="gnav__menu">
+            <li className="gnav__menu__item"><a>About</a></li>
+            <li className="gnav__menu__item"><a>Works</a></li>
+          </ul> */}
+          <div>2020/08/20 10:00 現在</div>
+        </nav>
+      </header>
 
-      <main role="main" className="px-md-4">
-        <div className="container-fluid">
-          <div className="">
-            <div className="row py-2">
-              <div className="col-12">
-                <h1 className="h2 alert alert-primary">2020/08/20 10:00 現在</h1>
+      <main role="main" className="px-md-4 bg-light">
+        <div className="senser-values mb-2">
+          <div className="row align-items-center h-100">
+            <div className="col-sm box mr-2">
+              <h2 className="h2 border-bottom">水位</h2>
+              <div className="row justify-content-center">
+                <div className="col-4 text-right h1">
+                  30
+                  </div>
+                <div className="col-4">
+                  cm
+                  </div>
               </div>
-              <div className="col-sm box mr-2">
-                <h1 className="h2">水位</h1>
-                <div className="row justify-content-center">
-                  <div className="col-4 text-right h1">
-                    30
+            </div>
+            <div className="col-sm box ml-2">
+              <h2 className="h2 border-bottom">水温</h2>
+              <div className="row justify-content-center">
+                <div className="col-4 text-right h1">
+                  35
                   </div>
-                  <div className="col-4">
-                    cm
+                <div className="col-4">
+                  ℃
                   </div>
-                </div>
-              </div>
-              <div className="col-sm box ml-2">
-                <h1 className="h2">水温</h1>
-                <div className="row justify-content-center">
-                  <div className="col-4 text-right h1">
-                    35
-                  </div>
-                  <div className="col-4">
-                    ℃
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="box mt-2">
-          <div className="row">
-            <div className="col">
-              <h1 className="h2 alert alert-primary">月間推移</h1>
-            </div>
-          </div>
+        <div className="change-of-month">
+          <h2 className="h2 border-bottom">月間推移</h2>
         </div>
       </main>
     </div>
