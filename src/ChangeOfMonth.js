@@ -2,18 +2,13 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 
 class LineExample extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
-
     render() {
         const data = {
             labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
             datasets: [
                 {
-                    label: 'My First dataset',
-                    fill: true,
+                    label: '水位',
+                    fill: false,
                     lineTension: 0.1,
                     backgroundColor: 'rgba(75,192,192,0.4)',
                     borderColor: 'rgba(75,192,192,1)',
@@ -30,18 +25,18 @@ class LineExample extends React.Component {
                     pointHoverBorderWidth: 1,
                     pointRadius: 1,
                     pointHitRadius: 10,
-                    data: [3, 10, 21, 31, 34, 40, 48]
+                    data: [0, 0, 0, 5, 34, 40, 42]
                 }
             ]
         };
 
         const options = {
-            // maintainAspectRatio: false,
-            // responsive: false,
+            responsive: true,
+            maintainAspectRatio: false
         };
 
         return (
-            <div class="chart-container">
+            <div className="chart-container">
                 <Line data={data} options={options} />
             </div>
         );

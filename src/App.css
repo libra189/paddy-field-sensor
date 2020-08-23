@@ -30,3 +30,11 @@ main {
 #change-of-month h2 {
     margin-bottom: 4px;
 }
+
+.chart-container {
+    position: relative;
+    width:  100%;
+    height: calc(100% - (2rem + 5px));
+    overflow: hidden;
+    margin: auto;
+}
