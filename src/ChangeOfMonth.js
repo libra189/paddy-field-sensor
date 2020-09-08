@@ -7,24 +7,27 @@ class LineExample extends React.Component {
             labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
             datasets: [
                 {
-                    label: '水位',
+                    label: '水温',
                     fill: false,
                     lineTension: 0.1,
-                    backgroundColor: 'rgba(75,192,192,0.4)',
-                    borderColor: 'rgba(75,192,192,1)',
+                    backgroundColor: 'rgba(178,34,34,0.4)',
+                    borderColor: 'rgba(178,34,34,1)',
                     borderCapStyle: 'round',
                     borderDash: [],
                     borderDashOffset: 0.0,
                     borderJoinStyle: 'square',
-                    pointBorderColor: 'rgba(75,192,192,1)',
-                    pointBackgroundColor: '#eee',
-                    pointBorderWidth: 10,
-                    pointHoverRadius: 5,
-                    pointHoverBackgroundColor: 'rgba(75,192,192,1)',
-                    pointHoverBorderColor: 'rgba(220,220,220,1)',
-                    pointHoverBorderWidth: 1,
-                    pointRadius: 1,
-                    pointHitRadius: 10,
+                    data: [0, 0, 0, 10, 15, 20, 23]
+                },
+                {
+                    label: '水位',
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: 'rgba(0,191,255,0.4)',
+                    borderColor: 'rgba(0,191,255,1)',
+                    borderCapStyle: 'round',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'square',
                     data: [0, 0, 0, 5, 34, 40, 42]
                 }
             ]
